@@ -70,5 +70,55 @@ namespace AI_Lab_2.common.home
             }
             return entitiesSum;
         }
+        public static double Ochiai(Entity enteredEntity, Entity establishedEntity)
+        {
+            return SubOperations.g(enteredEntity, establishedEntity) / Math.Sqrt(SubOperations.a(enteredEntity, establishedEntity) + SubOperations.b(enteredEntity, establishedEntity));
+        }
+        public static double Arccos(Entity enteredEntity, Entity establishedEntity)
+        {
+            double entitiesSum = 0;
+            for (int i = 0; i < establishedEntity.length(); i++)
+            {
+                entitiesSum += enteredEntity.getEntityCharacteristicsValue(i) * establishedEntity.getEntityCharacteristicsValue(i);
+            }
+            double establishedEntitiesSum = 0;
+            for (int i = 0; i < establishedEntity.length(); i++)
+            {
+                establishedEntitiesSum += Math.Pow(establishedEntity.getEntityCharacteristicsValue(i), 2);
+            }
+            double enteredEntitiesSum = 0;
+            for (int i = 0; i < enteredEntity.length(); i++)
+            {
+                enteredEntitiesSum += Math.Pow(enteredEntity.getEntityCharacteristicsValue(i), 2);
+            }
+            return Math.Acos(entitiesSum / (Math.Sqrt(establishedEntitiesSum) * Math.Sqrt(enteredEntitiesSum)));
+        }
+        public static double Smul(Entity enteredEntity, Entity establishedEntity)
+        {
+            double entitiesSum = 0;
+            for (int i = 0; i < establishedEntity.length(); i++)
+            {
+                entitiesSum += enteredEntity.getEntityCharacteristicsValue(i) * establishedEntity.getEntityCharacteristicsValue(i);
+            }
+            double establishedEntitiesSum = 0;
+            for (int i = 0; i < establishedEntity.length(); i++)
+            {
+                establishedEntitiesSum += Math.Pow(establishedEntity.getEntityCharacteristicsValue(i), 2);
+            }
+            double enteredEntitiesSum = 0;
+            for (int i = 0; i < enteredEntity.length(); i++)
+            {
+                enteredEntitiesSum += Math.Pow(enteredEntity.getEntityCharacteristicsValue(i), 2);
+            }
+            return (entitiesSum / (Math.Sqrt(establishedEntitiesSum) * Math.Sqrt(enteredEntitiesSum))) * Math.Sqrt(establishedEntitiesSum) * Math.Sqrt(enteredEntitiesSum);
+        }
+        public static double Area(Entity enteredEntity, Entity establishedEntity)
+        {
+            if (Euclid(enteredEntity, establishedEntity) < establishedEntity.Radius)
+            {
+                return 1.0;
+            }
+            return 0.0;
+        }
     }
 }

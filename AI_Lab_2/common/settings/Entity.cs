@@ -11,7 +11,7 @@ namespace AI_Lab_2.common.settings
     {
         private string name;
         private List<EntityCharacteristics> entityCharacteristics = new List<EntityCharacteristics>();
-
+        private double radius;
         public Entity(string name, params EntityCharacteristics[] entityCharacteristics)
         {
             this.name = name;
@@ -22,8 +22,9 @@ namespace AI_Lab_2.common.settings
             }
 
         }
-
         public string Name { get => name; set => name = value; }
+        public List<EntityCharacteristics> EntityCharacteristics { get => entityCharacteristics; set => entityCharacteristics = value; }
+        public double Radius { get => radius; set => radius = value; }
         public double getEntityCharacteristicsValue(int identificator)
         {
             return entityCharacteristics[identificator].Value;
@@ -83,6 +84,28 @@ namespace AI_Lab_2.common.settings
         public int length()
         {
             return entityCharacteristics.Count();
+        }
+        public override string ToString()
+        {
+            string output = "";
+            output += $"name: {this.name}" + Environment.NewLine;
+            output += "{" + Environment.NewLine;
+            foreach (EntityCharacteristics entityCharacteristics in this.entityCharacteristics)
+            {
+                output += $"\tname: {entityCharacteristics.Name}" + Environment.NewLine +
+                    $"\tvalue: {entityCharacteristics.Value}" + Environment.NewLine;
+            }
+            output += "}" + Environment.NewLine;
+            return output;
+        }
+        public double[] GetCoords()
+        {
+            double[] coords = new double[this.entityCharacteristics.Count()];
+            for (int i = 0; i < this.entityCharacteristics.Count(); i++)
+            {
+                coords[i] = entityCharacteristics[i].Value;
+            }
+            return coords;
         }
     }
 }

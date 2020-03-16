@@ -1,0 +1,86 @@
+[
+  {
+    "Name": "AR",
+    "EntityCharacteristics": [
+      {
+        "Name": "Mass",
+        "Value": 3300.0
+      },
+      {
+        "Name": "Length",
+        "Value": 940.0
+      },
+      {
+        "Name": "Rate of fire",
+        "Value": 600.0
+      },
+      {
+        "Name": "Volume",
+        "Value": 30.0
+      }
+    ]
+  },
+  {
+    "Name": "SMG",
+    "EntityCharacteristics": [
+      {
+        "Name": "Mass",
+        "Value": 2540.0
+      },
+      {
+        "Name": "Length",
+        "Value": 680.0
+      },
+      {
+        "Name": "Rate of fire",
+        "Value": 800.0
+      },
+      {
+        "Name": "Volume",
+        "Value": 30.0
+      }
+    ]
+  },
+  {
+    "Name": "MG",
+    "EntityCharacteristics": [
+      {
+        "Name": "Mass",
+        "Value": 6500.0
+      },
+      {
+        "Name": "Length",
+        "Value": 1000.0
+      },
+      {
+        "Name": "Rate of fire",
+        "Value": 900.0
+      },
+      {
+        "Name": "Volume",
+        "Value": 100.0
+      }
+    ]
+  },
+  {
+    "Name": "HG",
+    "EntityCharacteristics": [
+      {
+        "Name": "Mass",
+        "Value": 625.0
+      },
+      {
+        "Name": "Length",
+        "Value": 186.0
+      },
+      {
+        "Name": "Rate of fire",
+        "Value": 200.0
+      },
+      {
+        "Name": "Volume",
+        "Value": 17.0
+      }
+    ]
+  }
+]
