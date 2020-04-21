@@ -120,5 +120,10 @@ namespace AI_Lab_2.common.home
             }
             return 0.0;
         }
+        public static double Conus(Entity enteredEntity, Entity establishedEntity)
+        {
+            double angle = Operations.Arccos(enteredEntity, establishedEntity);
+            return Math.Pow(angle - establishedEntity.Angle, 2);
+        }
     }
 }

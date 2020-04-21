@@ -101,12 +101,14 @@ namespace AI_Lab_2
                 List<EntityOutput> acos = home.Execute(Operations.Arccos, enteredEntity);
                 List<EntityOutput> smul = home.Execute(Operations.Smul, enteredEntity);
                 List<EntityOutput> area = home.Execute(Operations.Area, enteredEntity);
+                List<EntityOutput> conus = home.Execute(Operations.Conus, enteredEntity);
 
                 string acosResult = enteredEntity.Name + " according to Acos refers to " + DefineClassMin(acos).Name + Environment.NewLine;
                 string smulResult = enteredEntity.Name + " according to Smul refers to " + DefineClassMax(smul).Name + Environment.NewLine;
                 string areaResult = enteredEntity.Name + " according to Area refers to " + DefineClassMax(area).Name + Environment.NewLine;
+                string conusResult = enteredEntity.Name + " according to Conus refers to " + DefineClassMin(conus).Name + Environment.NewLine;
 
-                rTB.Text = acosResult + smulResult + areaResult;
+                rTB.Text = acosResult + smulResult + areaResult + conusResult;
             }
             catch(Exception ex)
             {
