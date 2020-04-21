@@ -26,6 +26,7 @@ namespace AI_Lab_2.common.home
                         if (entities[i].Radius > radius)
                         {
                             entities[i].Radius = radius;
+                            entities[i].Angle = Operations.Arccos(entities[i], entities[j]) / 2;
                         }
                     }
                 }

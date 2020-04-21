@@ -12,11 +12,12 @@ namespace AI_Lab_2.common.settings
         private string name;
         private List<EntityCharacteristics> entityCharacteristics = new List<EntityCharacteristics>();
         private double radius;
+        private double angle;
         public Entity(string name, params EntityCharacteristics[] entityCharacteristics)
         {
             this.name = name;
-            
-            foreach(EntityCharacteristics entityChar in entityCharacteristics)
+
+            foreach (EntityCharacteristics entityChar in entityCharacteristics)
             {
                 this.entityCharacteristics.Add(entityChar);
             }
@@ -25,6 +26,7 @@ namespace AI_Lab_2.common.settings
         public string Name { get => name; set => name = value; }
         public List<EntityCharacteristics> EntityCharacteristics { get => entityCharacteristics; set => entityCharacteristics = value; }
         public double Radius { get => radius; set => radius = value; }
+        public double Angle { get => angle; set => angle = value; }
         public double getEntityCharacteristicsValue(int identificator)
         {
             return entityCharacteristics[identificator].Value;
