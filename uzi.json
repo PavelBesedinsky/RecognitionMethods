@@ -1,0 +1,21 @@
+{
+  "Name": "Uzi",
+  "EntityCharacteristics": [
+    {
+      "Name": "Mass",
+      "Value": 2650.0
+    },
+    {
+      "Name": "Length",
+      "Value": 360.0
+    },
+    {
+      "Name": "Rate of fire",
+      "Value": 1000.0
+    },
+    {
+      "Name": "Volume",
+      "Value": 32.0
+    }
+  ]
+}

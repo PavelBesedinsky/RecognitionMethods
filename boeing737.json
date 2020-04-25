@@ -1,0 +1,45 @@
+{
+  "Name": "Boeing 737",
+  "EntityCharacteristics": [
+    {
+      "Name": "Ability to fly",
+      "Value": 1.0
+    },
+    {
+      "Name": "Control elements",
+      "Value": 1.0
+    },
+    {
+      "Name": "Able to lift heavy loads",
+      "Value": 1.0
+    },
+    {
+      "Name": "Piston engine",
+      "Value": 0.0
+    },
+    {
+      "Name": "Turbojet engine",
+      "Value": 1.0
+    },
+    {
+      "Name": "Turboprop engine",
+      "Value": 0.0
+    },
+    {
+      "Name": "Gas turbine engine",
+      "Value": 0.0
+    },
+    {
+      "Name": "Rocket engine",
+      "Value": 0.0
+    },
+    {
+      "Name": "Main rotor",
+      "Value": 0.0
+    },
+    {
+      "Name": "Height limit",
+      "Value": 1.0
+    }
+  ]
+}

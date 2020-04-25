@@ -1,0 +1,21 @@
+{
+  "Name": "AK-74",
+  "EntityCharacteristics": [
+    {
+      "Name": "Mass",
+      "Value": 3300.0
+    },
+    {
+      "Name": "Length",
+      "Value": 940.0
+    },
+    {
+      "Name": "Rate of fire",
+      "Value": 600.0
+    },
+    {
+      "Name": "Volume",
+      "Value": 30.0
+    }
+  ]
+}
